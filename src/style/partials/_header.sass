@@ -1,0 +1,128 @@
+.header
+  border-bottom: 0.5px solid #e1e1e1
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  background-color: #fff
+  padding: 25px 0 25px 0
+  background-color: #ffffff   
+  @media screen and (max-width: 480px)
+    padding: 5px 15px 7px 15px
+  .header-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .logo
+    a
+      img 
+        width: 65px
+    @media screen and (max-width: 480px)
+      font-size: 2.5em
+  .header-nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 35%
+    @media screen and (max-width: 768px)
+      width: 50%
+      @media screen and (max-width: 480px)
+        width: 100%
+        margin-top: 20px
+    .phone
+      a
+        width: 16px
+        height: 16px
+        @media screen and (max-width: 480px)
+          display: none
+        .phone-bg
+          width: 16px
+          height: 16px
+          background-image: url('../img/icons-header/phone-swipe.png')
+          transition: .25s
+          &:hover
+            background-position: 0 -16px
+            transition: .25s
+    .email
+      a
+        display: block
+        width: 16px
+        height: 16px
+        @media screen and (max-width: 480px)
+          display: none
+        .email-bg
+          width: 16px
+          height: 16px
+          background-image: url('../img/icons-header/email-swipe.png')
+          transition: .25s
+          &:hover
+            background-position: 0 -16px
+            transition: .25s
+
+    .my_btn
+      display: block
+      background: $main-color
+      color: #fff
+      padding: 10px
+      width: 100px
+      text-align: center
+      font-family: $main-font
+      font-weight: 900
+      text-transform: uppercase
+      font-size: 14px
+      transition: .25s
+      border: 1px solid transparent
+      letter-spacing: 2px
+      &:hover
+        transition: .25s
+        background: #fff
+        color: $main-color
+        border: 1px solid $main-color
+        letter-spacing: 5px
+        text-decoration: none
+      @media screen and (max-width: 480px)
+        display: none
+    .menu
+      margin-top: 6.5px
+      @media screen and (max-width: 480px)
+        margin: 0
+      #hamburger
+        width: 38px
+        height: 33px
+        position: relative
+        margin: 0 auto
+        transform: rotate(0deg)
+        cursor: pointer
+        &:hover
+          span
+            background: $sec-color 
+        span
+          display: block
+          position: absolute
+          height: 1px
+          width: 100%
+          background: $main-color
+          transform: rotate(0deg)
+          transition: .25s ease-in-out
+          transform-origin: left center
+      #hamburger
+        span:nth-child(1)
+          top: 0
+          transform-origin: left center
+      #hamburger
+        span:nth-child(2)
+          top: 8px
+          transform-origin: left center
+      #hamburger
+        span:nth-child(3)
+          top: 16px
+          transform-origin: left center
+      #hamburger.open span:nth-child(1)
+        transform: rotate(45deg)
+        top: -3px
+      #hamburger.open span:nth-child(2)
+        width: 0
+        opacity: 0
+      #hamburger.open span:nth-child(3)
+        transform: rotate(-45deg)
+        top: 24px
