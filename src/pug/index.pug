@@ -2,13 +2,14 @@ include template/intro
 include template/header
 include template/welcome
 include template/menu
+include template/about
 
 
 
 doctype html
 html(lang="ru")
   head
-    title= 'GLOBALWEB creative web-studio'
+    title= 'crypta.tv'
     //- meta
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
@@ -20,13 +21,26 @@ html(lang="ru")
     //- custom css
     link(href='css/main.css', rel='stylesheet')
   body.page
-    +header()
+    
+    //navigation
     +nav()
-    +intro()
+    //navigation:END
+    
+    //header
+    +header()
+    //header:END
+    
+    //course-for
+    +about()
+    //course-for:END
+    
+    
+    
+    //+intro()
     //- libs
-    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     //- custom scripts
     script(src="js/typewrite.min.js")
     script(src="js/main.js")
+    script(src="js/canvas.js")
     

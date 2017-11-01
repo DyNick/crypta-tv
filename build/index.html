@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>GLOBALWEB creative web-studio</title>
+    <title>crypta.tv</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,9 +9,28 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body class="page">
+    <!--navigation-->
+    <menu class="nav"> 
+      <nav class="nav-wrap">
+        <ul>
+          <li><a class="nav-wrap__link" href="#">о курсе
+              <div class="nav-wrap__link__block"></div></a></li>
+          <li><a class="nav-wrap__link" href="#"> цели и результаты
+              <div class="nav-wrap__link__block"></div></a></li>
+          <li><a class="nav-wrap__link" href="#"> спикеры
+              <div class="nav-wrap__link__block"></div></a></li>
+          <li><a class="nav-wrap__link" href="#">что вы получите
+              <div class="nav-wrap__link__block"></div></a></li>
+          <li><a class="nav-wrap__link" href="#"> отзывы
+              <div class="nav-wrap__link__block"></div></a></li>
+        </ul>
+      </nav>
+    </menu>
+    <!--navigation:END-->
+    <!--header-->
     <header class="header">
-      <div class="container header-wrap">
-        <div class="logo"><a href="/"><img src="" alt="logo"/></a></div>
+      <div class="container container--header">
+        <div class="logo"><a href="/"><img src="img/logo/logo.png" alt="logo"/></a></div>
         <div class="header-nav">
           <div class="phone"><a href="tel:+380680474720">
               <div class="phone-bg"></div></a></div>
@@ -24,22 +43,35 @@
         </div>
       </div>
     </header>
-    <menu class="nav"> 
-      <div class="close-btn"></div>
-      <nav class="nav-wrap">
+    <!--header:END-->
+    <!--course-for-->
+    <section class="about">
+      <div class="about-line"></div>
+      <canvas id="canvas"></canvas>
+      <div class="container container--about">
+        <h2> Для кого курс</h2>
+        <hr/>
         <ul>
-          <li><a href="#">о курсе</a></li>
-          <li><a href="#"> цели и результаты</a></li>
-          <li><a href="#"> спикеры</a></li>
-          <li><a href="#">что вы получите</a></li>
-          <li><a href="#"> отзывы</a></li>
+          <li><img src="img/about/ico.png" alt=""/>
+            <p>кто хочет создать ico</p>
+          </li>
+          <li><img src="img/about/dollar.png" alt=""/>
+            <p>собрать деньги на свой стартап</p>
+          </li>
+          <li><img src="img/about/marketing.png" alt=""/>
+            <p>кто хочет сделать маркетинг для ico эффективным</p>
+          </li>
+          <li><img src="img/about/quality.png" alt=""/>
+            <p>юридические аспекты ico</p>
+          </li>
         </ul>
-      </nav>
-    </menu>
-    <section class="intro"></section>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      </div>
+    </section>
+    <!--course-for:END-->
+    <!--+intro()-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/typewrite.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/canvas.js"></script>
   </body>
 </html>

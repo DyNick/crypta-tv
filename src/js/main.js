@@ -1,19 +1,20 @@
 $(document).ready(function() {
 	$('#hamburger').click(function(){
 		$(this).toggleClass('open');
+		$('.nav').toggleClass('active-nav');
 	});
 
 
-	//TYPEWRITE SCRIPT 
+	//TYPEWRITE SCRIPT
 	$('#typewriteText').typewrite({
 		actions: [
-			{delay: 1000},
-			{type: 'professional '},
+			{delay: 500},
+			{type: 'Crypta '},
 			 {type: '<br>'},
-			{type: 'website '},
+			{type: 'TV '},
 			{type: '<br>'},
-			{type: 'development'},
+			{type: 'Education'},
 		],
 		showCursor: false
-	});	
+	});
 });

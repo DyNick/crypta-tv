@@ -5,20 +5,18 @@
   align-items: center
   width: 100%
   background-color: #fff
-  padding: 25px 0 25px 0
-  background-color: #ffffff   
+  padding: 10px 0 10px 0
+  background-color: #ffffff
   @media screen and (max-width: 480px)
     padding: 5px 15px 7px 15px
-  .header-wrap
+  .container--header
     display: flex
     justify-content: space-between
     align-items: center
   .logo
     a
-      img 
-        width: 65px
-    @media screen and (max-width: 480px)
-      font-size: 2.5em
+      img
+        width: 80px
   .header-nav
     display: flex
     justify-content: space-between
@@ -63,8 +61,10 @@
       display: block
       background: $main-color
       color: #fff
-      padding: 10px
-      width: 100px
+      height: 40px
+      text-align: center
+      line-height: 40px
+      width: 150px
       text-align: center
       font-family: $main-font
       font-weight: 900
@@ -95,7 +95,7 @@
         cursor: pointer
         &:hover
           span
-            background: $sec-color 
+            background: $sec-color
         span
           display: block
           position: absolute

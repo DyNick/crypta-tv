@@ -1,0 +1,51 @@
+.nav
+  background-color: $main-color
+  position: absolute
+  height: 100vh
+  width: 100%
+  top: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  transform: translateY(-100%)
+  transition: .7s
+  z-index: 999
+  .nav-wrap
+    width: 100%
+    display: flex
+    justify-content: center
+    ul
+      li
+        .nav-wrap__link
+          color: #ffffff
+          font-size: 4em
+          display: block
+          transition: all .25s
+          text-transform: uppercase
+          position: relative
+          text-align: left
+          margin: 50px 0 50px 0
+          &:hover
+            transition: all .25s
+            color: $sec-color
+            .nav-wrap__link__block
+              opacity: 1
+              transition: .25s
+              background-color: $sec-color
+          .nav-wrap__link__block
+            position: absolute
+            top: 16px
+            left: -32px
+            width: 16px
+            height: 16px
+            background-color: #fff
+            opacity: 0
+            transition: .25s
+
+
+.active-nav
+  top: 100px
+  transform: translateY(0)
+  transition: .7s

@@ -1,16 +1,19 @@
 mixin nav(data)
   menu.nav  
-    div.close-btn
-      
     nav.nav-wrap
       ul
         li
-          a(href="#") о курсе
+          a(href="#" class="nav-wrap__link") о курсе
+            div.nav-wrap__link__block
         li
-          a(href="#")  цели и результаты
+          a(href="#" class="nav-wrap__link")  цели и результаты
+            div.nav-wrap__link__block
         li
-          a(href="#")  спикеры
+          a(href="#" class="nav-wrap__link")  спикеры
+            div.nav-wrap__link__block
         li
-          a(href="#") что вы получите
+          a(href="#" class="nav-wrap__link") что вы получите
+            div.nav-wrap__link__block
         li
-          a(href="#")  отзывы
+          a(href="#" class="nav-wrap__link")  отзывы
+            div.nav-wrap__link__block
